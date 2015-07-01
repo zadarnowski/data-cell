@@ -10,10 +10,15 @@
 >   Cell (..), CellDelimiter (..)
 > ) where
 
+> import Control.Monad
+
 > -- | Individual cell type
 
 > data Cell a = Cell a CellDelimiter
 >   deriving (Eq, Ord, Show)
+
+> instance Functor Cell where
+>   fmap f (Cell x d) = Cell (f x) d
 
 > -- | Cell delimiter
 
