@@ -22,8 +22,6 @@
 >   Cell (..), CellDelimiter (..)
 > ) where
 
-> import Control.Monad
-
 > -- | Type used to represent individual data cells.
 
 > data Cell a = Cell a CellDelimiter
