@@ -1,5 +1,5 @@
 name:           data-cell
-version:        1.0.0.1
+version:        1.0.0.2
 synopsis:       Generic cellular data representation library
 homepage:       https://github.com/zadarnowski/data-cell
 category:       Data
@@ -41,12 +41,12 @@ source-repository head
 source-repository this
   type:         git
   location:     https://github.com/zadarnowski/data-cell.git
-  tag:          1.0.0.1
+  tag:          1.0.0.2
 
 library
   hs-source-dirs:   src
   default-language: Haskell2010
-  ghc-options:      -Wall -fno-warn-unused-do-bind -fno-warn-unused-binds
+  ghc-options:      -Wall -fno-warn-unused-do-bind -fno-warn-missing-signatures
 
   exposed-modules:
     Data.Cell
